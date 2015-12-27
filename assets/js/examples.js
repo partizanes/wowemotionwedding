@@ -61,10 +61,13 @@ $(document).ready(function(){
             var wih = window.innerHeight;
         }
 
-        var cssObj = { 'left' : Math.random()*(wiw-400),
+        var cssObj = {
+            'display' : 'inline-block',
+            'left' : Math.random()*(wiw-400),
             'top' : Math.random()*(wih-400),
-            '-webkit-transform' : 'rotate('+ rotDegrees +'deg)',  // safari only
-            'tranform' : 'rotate('+ rotDegrees +'deg)' }; // added in case CSS3 is standard
+            'tranform' : 'rotate('+ rotDegrees +'deg)', //added in case CSS3 is standard
+            '-moz-transform' : 'rotate('+ rotDegrees +'deg)',
+            '-webkit-transform' : 'rotate('+ rotDegrees +'deg)'};  // safari only
         $(this).css(cssObj);
     });
 
@@ -80,8 +83,8 @@ $(document).ready(function(){
             // Bring polaroid to the foreground
             zindexnr++;
             var cssObj = { 'z-index' : zindexnr,
-                'transform' : 'rotate(0deg)',	 // added in case CSS3 is standard
-                '-webkit-transform' : 'rotate(0deg)' };  // safari only
+                   'transform' : 'rotate(0deg)',	 // added in case CSS3 is standard
+                   '-webkit-transform' : 'rotate(0deg)' };  // safari only
             $(this).css(cssObj);
         }
     });
