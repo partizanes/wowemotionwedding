@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Kelly+Slab&subset=latin,cyrillic');
+@import url("font-awesome.min.css");
+
+	h1{
+		font-weight: 900;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	.section0{
+
+	}
+
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background: #fff;
+		background: rgba(255, 255, 255, 0.95);
+		height: 3em;
+		line-height: 1em;
+		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+		z-index:9;
+		text-align:left;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+
+    #footer {
+        position:fixed;
+        height: 50px;
+        display:block;
+        width: 100%;
+        background: #fff;
+        background: rgba(255, 255, 255, 0.95);
+        height: 2.5em;
+        line-height: 1em;
+        box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+        z-index:9;
+        text-align:left;
+        color: #f2f2f2;
+        padding: 20px 0 0 0;
+    }
+
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
+
+    #footer .menu {
+        position: absolute;
+        right: 1em;
+        top: -20px;
+        height: 5em;
+        line-height: 5em;
+        margin: 0;
+        font-family: Kelly Slab;
+        font-size: 130%;
+        color: rgba(176, 32, 37, 0.48);
+    }
+
+    #footer .menu li {
+        font-size: 0.9em;
+    }
+
+    #footer a:hover {
+        color: #4559ac;
+        color: #5667ac;
+    }
+
+
+
+/* Bottom menu
+* --------------------------------------- */
+	#infoMenu {
+		bottom: 80px;
+	}
+	#infoMenu li a {
+		color: #fff;
+		z-index: 999;
+	}
+	
+	
+	#logo {
+		position: absolute;
+		left: 0.7em;
+		top: -0.1em;
+		height: 6em;
+		line-height: 2.4em;
+		font-family: Kelly Slab;
+        font-size: 1.9em;
+		letter-spacing: -1px;
+	}
+
+		#logo a {
+			font-size: 1.25em;
+		}
+
+		#logo img {
+			vertical-align: text-bottom;
+		}
+
+	#nav {
+		position: absolute;
+		right: 0.5em;
+		top: 0;
+		height: 3em;
+		line-height: 3em;
+        font-family: Kelly Slab;
+	}
+
+		#nav ul {
+			margin: 0;
+		}
+
+			#nav ul li {
+				display: inline-block;
+				margin-left: 0.5em;
+				font-size: 1.4em;
+			}
+
+				#nav ul li a {
+					display: block;
+					color: #39454b;
+					text-decoration: overline;
+					height: 3.6em;
+					line-height: 3em;
+					padding: 0 0.5em 0 0.5em;
+					outline: 0;
+					letter-spacing: -1px;
+				}
+
+					#nav ul li a:hover {
+						color: #9f31b0;
+					}
+
+		#nav li.active a {
+			color: #9f31b0;
+		}
+
+
+#myVideo{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-color: black; /* in case the video doesn't fit the whole page*/
+	background-image: /* our video */;
+	background-position: center center;
+	background-size: contain;
+	object-fit: cover; /*cover video background */
+	z-index:3;
+}
+
+
+
+/* Layer with position absolute in order to have it over the video
+* --------------------------------------- */
+#section0 .layer{
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	left: 0;
+	top: 20%;
+	font-size: 4px;
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+#section0{
+	overflow: hidden;
+}
+
+
+/* List */
+
+ul.default {
+	list-style: disc;
+	padding-left: 1em;
+}
+
+ul.default li {
+	padding-left: 0.5em;
+}
+
+ul.icons {
+	cursor: default;
+}
+
+ul.icons li {
+	display: inline-block;
+}
+
+ul.icons a {
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	border: 0;
+}
+
+ul.menu {
+	cursor: default;
+}
+
+ul.menu li {
+	display: inline-block;
+	line-height: 1em;
+	border-left: solid 1px rgba(145, 146, 147, 0.25);
+	padding: 0 0 0 0.5em;
+	margin: 0 0 0 0.5em;
+}
+
+ul.menu li:first-child {
+	border-left: 0;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+ul.actions {
+	cursor: default;
+    margin-left: 15px;
+    margin-top: -5px;
+}
+
+ul.actions li {
+	display: inline-block;
+	margin: 0 0 0 0.5em;
+}
+
+ul.actions li:first-child {
+	margin-left: 0;
+}
+
+ol.default {
+	list-style: decimal;
+	padding-left: 1.25em;
+}
+
+ol.default li {
+	padding-left: 0.25em;
+}
+
+
+/* Icons */
+
+.icon {
+	text-decoration: none;
+    color: rgba(176, 32, 37, 0.48);
+    padding: 14.1667px;
+}
+
+.icon:before {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 30px;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+.icon > .label {
+	display: none;
+}
+
+
+/* Расположение точек слайдов над футером */
+.fp-slidesNav {
+	top: 90%;
+}
+
+/* цвет точек слайдеров над футером */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	/*background-color: #9f31b0; */
+}
+
