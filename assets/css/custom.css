@@ -14,8 +14,9 @@
 		text-align:center;
 	}
 
-	.section0{
-
+	#section1 {
+		background:  url("../img/subtle_carbon.png");
+		background-position: top left, center center;
 	}
 
 	/* Fixed header and footer.
@@ -150,7 +151,6 @@
 			color: #9f31b0;
 		}
 
-
 #myVideo{
 	position: absolute;
 	right: 0;
@@ -160,14 +160,13 @@
 	width: 100%;
 	height: 100%;
 	background-size: 100% 100%;
-	background-color: black; /* in case the video doesn't fit the whole page*/
-	background-image: /* our video */;
+	background-color: black;
 	background-position: center center;
-	background-size: contain;
-	object-fit: cover; /*cover video background */
+	background-size: cover;
+	object-fit: cover; /*cover video background*/
 	z-index:3;
-}
 
+}
 
 
 /* Layer with position absolute in order to have it over the video
@@ -184,6 +183,9 @@
 /*solves problem with overflowing video in Mac with Chrome */
 #section0{
 	overflow: hidden;
+	background:  url("../img/background_mobile_min.png");
+	background-position: center center;
+	background-size: cover;
 }
 
 
