@@ -39,6 +39,7 @@ $(document).ready(function(){
 		loopTop: true,
 		loopBottom: true,
         slidesNavigation: true,
+        controlArrows: false,
         afterRender: function () {
             $('video').get(0).play();
         }
