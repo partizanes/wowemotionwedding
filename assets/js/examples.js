@@ -24,6 +24,10 @@ $(document).ready(function(){
 	  window.location.href = $(this).find("option:selected").attr("id") + '.html';
 	});
 
+    $('#gallery-container').sGallery({
+        fullScreenEnabled: true //default is false
+    });
+
     if(isMobile.any()){
         var cssObj = {
             'width' : '0%',
