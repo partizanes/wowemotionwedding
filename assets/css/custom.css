@@ -98,7 +98,7 @@
 		position: absolute;
 		left: 0.7em;
 		top: -0.1em;
-		height: 6em;
+		height: 3em;
 		line-height: 2.4em;
 		font-family: Kelly Slab;
         font-size: 1.9em;
@@ -289,6 +289,13 @@ ol.default li {
 /* Расположение точек слайдов над футером */
 .fp-slidesNav {
 	top: 90%;
+}
+
+@media (max-width: 1367px) { /* <1367 */
+    .fp-slidesNav.top { top: 60px; } /*  расположение сверху */
+	#fp-nav ul li a span,
+	.fp-slidesNav ul li a span { background: #E8F600;}
+	#gallery-container { margin-top: 50px; margin-bottom: 50px; }
 }
 
 /* цвет точек слайдеров над футером */
