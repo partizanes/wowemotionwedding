@@ -298,8 +298,12 @@ ol.default li {
 	#gallery-container { margin-top: 50px; margin-bottom: 50px; }
 }
 
+@media (min-width: 1919px) { /* <1920 */
+    .fp-slidesNav.top { top: 72px; }
+}
+
 /* цвет точек слайдеров над футером */
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
-	/*background-color: #9f31b0; */
+    background: #E8F600;
 }
 
