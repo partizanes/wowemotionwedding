@@ -35,7 +35,7 @@ $(document).ready(function(){
         $('video').css(cssObj);
     }
 
-	$('#fullpage').fullpage({
+    $('#fullpage').fullpage({
 		verticalCentered: true,
 		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#1bbc9b', '#4BBFC3'],
 		anchors: ['about', 'gallery', 'blog' , 'reviews' , 'contacts'],
@@ -49,6 +49,7 @@ $(document).ready(function(){
             $('video').get(0).play();
         }
 	});
+
 
     $(".polaroid").each(function (i) {
         var tempVal = Math.round(Math.random());

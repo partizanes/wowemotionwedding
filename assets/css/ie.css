@@ -1,17 +1,19 @@
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
  #myVideo{
-	min-width: 100%;
-	min-height: 100%;
-	width:	auto;
-	height: auto;
+	 min-width: 100%;
+	 min-height: 100%;
+	 width:	auto;
+	 height: auto;
+     margin-top: 0px;
 	}
 }
 
 @supports (-ms-accelerator:true) {
   #myVideo{
-	min-width: 100%;
-	min-height: 100%;
-	width:	auto;
-	height: auto;
+      min-width: 100%;
+      min-height: 100%;
+      width:	auto;
+      height: auto;
+      margin-top: 0px;
 	}
 }

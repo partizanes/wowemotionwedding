@@ -165,7 +165,7 @@
 	background-size: cover;
 	object-fit: cover; /*cover video background*/
 	z-index:3;
-
+	margin-top: 2%;
 }
 
 
