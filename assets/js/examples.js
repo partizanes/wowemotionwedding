@@ -19,6 +19,21 @@ var isMobile = {
     }
 };
 
+function copyToClipboard(text) {
+    swal({
+        html: "true",
+        title: "",
+        text: "Чтобы скопировать текст в буфер обмена, <br> Нажмите Ctrl+C и Enter",
+        type: "input",
+        inputValue: text ,
+        confirmButtonText: "Ok",
+        allowEscapeKey: "true",
+        allowOutsideClick: "true"
+    });
+
+    $('fieldset > input[type=text]').select();
+}
+
 $(document).ready(function(){
 	$("#demosMenu").change(function(){
 	  window.location.href = $(this).find("option:selected").attr("id") + '.html';
