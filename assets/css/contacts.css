@@ -1,0 +1,229 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+
+    .list {
+        display: block;
+    }
+
+    /* Form */
+
+    form label {
+        color: #3e3e3e;
+        font-weight: 700;
+        display: block;
+        margin: 0 0 0.5em 0;
+    }
+
+    form input[type=text],
+    form input[type=email],
+    form input[type=password],
+    form select,
+    form textarea {
+        -moz-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+        -webkit-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+        -ms-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+        transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+        -webkit-appearance: none;
+        display: block;
+        border: 0;
+        padding: 0.85em;
+        font-size: 1em;
+        border-radius: 8px;
+        border: solid 1px #ddd;
+        background: #fff;
+        color: #bbb;
+        box-shadow: inset 0px 2px 3px 1px rgba(255, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 0, 0, 0.025);
+        width: 100%;
+        margin-bottom: 1%;
+    }
+
+    form input[type=text]:focus,
+    form input[type=email]:focus,
+    form input[type=password]:focus,
+    form select:focus,
+    form textarea:focus {
+        background: #fafafa;
+        box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025), inset 0px 0px 2px 1px #43bff0;
+    }
+
+    form textarea {
+        height: 12em;
+        font-size: 1.25em;
+    }
+
+    form .formerize-placeholder {
+        color: #555 !important;
+    }
+
+    form ::-webkit-input-placeholder {
+        color: #555 !important;
+    }
+
+    form :-moz-placeholder {
+        color: #555 !important;
+    }
+
+    form ::-moz-placeholder {
+        color: #555 !important;
+    }
+
+    form :-ms-input-placeholder {
+        color: #555 !important;
+    }
+
+    form ::-moz-focus-inner {
+        border: 0;
+    }
+
+    /* Wrappers */
+
+    .wrapper {
+        background-image: url("../img/bg.png");
+        box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        margin: auto;
+    }
+
+    .wrapper.style4 form input[type=text],
+    .wrapper.style4 form input[type=password],
+    .wrapper.style4 form select,
+    .wrapper.style4 form textarea {
+        border: none;
+        background: #282828;
+    }
+
+    .wrapper.style4 form input[type=text]:focus,
+    .wrapper.style4 form input[type=password]:focus,
+    .wrapper.style4 form select:focus,
+    .wrapper.style4 form textarea:focus {
+        background: #252525;
+    }
+
+
+    /* Button */
+
+    .buttons {
+        display: inline-flex;
+        margin-top: 2%;
+    }
+
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    button,
+    .button {
+        background-image: url("../img/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+        background-image: url("../img/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+        background-image: url("../img/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+        background-image: url("../img/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+        -moz-transition: background-color .2s ease-in-out;
+        -webkit-transition: background-color .2s ease-in-out;
+        -ms-transition: background-color .2s ease-in-out;
+        transition: background-color .2s ease-in-out;
+        -webkit-appearance: none;
+        position: relative;
+        display: inline-block;
+        color: #fff !important;
+        text-decoration: none;
+        font-weight: 700;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        border-radius: 8px;
+        text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+        background-color: #43B3E0;
+    }
+
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    button:hover,
+    .button:hover {
+        background-color: #43bff0;
+        color: #fff !important;
+    }
+
+    input[type="button"]:active,
+    input[type="submit"]:active,
+    input[type="reset"]:active,
+    button:active,
+    .button:active {
+        background-color: #3BA8D3;
+        top: 1px;
+    }
+
+    input[type="button"].alt,
+    input[type="submit"].alt,
+    input[type="reset"].alt,
+    button.alt,
+    .button.alt {
+        background-color: #444;
+        box-shadow: inset 0px 0px 0px 1px #242424, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.2);
+    }
+
+    input[type="button"].alt:hover,
+    input[type="submit"].alt:hover,
+    input[type="reset"].alt:hover,
+    button.alt:hover,
+    .button.alt:hover {
+        background-color: #4f4f4f;
+        color: #fff !important;
+    }
+
+    input[type="button"].alt:active,
+    input[type="submit"].alt:active,
+    input[type="reset"].alt:active,
+    button.alt:active,
+    .button.alt:active {
+        background-color: #3f3f3f;
+    }
+
+
+    @media screen and (min-width: 737px) {
+        /* Form */
+
+        form input[type="button"],
+        form input[type="submit"],
+        form input[type="reset"],
+        form button,
+        form .button {
+            margin: 0 0.5em 0 0.5em;
+        }
+
+        /* Button */
+
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"],
+        button,
+        .button {
+            padding: 1em 2.35em 1em 2.35em;
+            font-size: 1.3em;
+        }
+
+        input[type="button"].big,
+        input[type="submit"].big,
+        input[type="reset"].big,
+        button.big,
+        .button.big {
+            font-size: 1.5em;
+            letter-spacing: -0.025em;
+        }
+
+    }
+
+    @media screen and (max-width: 736px) {
+        /* Button */
+
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"],
+        button,
+        .button {
+            text-align: center;
+            font-size: 1.2em;
+            width: 100%;
+            padding: 1em 0 1em 0;
+        }
+    }

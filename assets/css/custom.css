@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Kelly+Slab&subset=latin,cyrillic');
 @import url("font-awesome.min.css");
 
+@font-face {
+    font-family: 'LazyCrazy';
+    src: url('../fonts/lazy/lazy.eot');
+    src: url('../fonts/lazy/lazy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lazy/lazy.woff') format('woff'),
+    url('../fonts/lazy/lazy.ttf') format('truetype'),
+    url('../fonts/lazy/lazy.svg#LazyCrazy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 	h1{
 		font-weight: 900;
 	}
@@ -19,8 +30,51 @@
 		background-position: top left, center center;
 	}
 
-	/* Fixed header and footer.
-	* --------------------------------------- */
+	#section4 {
+		background:  url("../img/black_linen_v2.png");
+		background-position: top left, center center;
+
+	}
+
+	#section4 p {
+        margin-top: 10px;
+		font-family: LazyCrazy;
+		font-size: 2.25em;
+        color: aqua;
+}
+    #section4 a {
+        font-family: Kelly Slab;
+        font-style: italic;
+		color: aqua;
+    }
+
+	#section4 .fa {
+		display: block;
+	}
+
+    #section4 .contacts  {
+        display: inline-flex;
+        font-family: FontAwesome;
+        font-size: 25px;
+        color: aqua;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+		margin-top: 5%
+    }
+
+	#section4 .contacts li {
+		padding: 50px;
+	}
+
+    #section4 .fp-tableCell {
+        vertical-align: top;
+    }
+
+    #section4 .block {
+        margin-top: 4%
+    }
+    /* Fixed header and footer.
+    * --------------------------------------- */
 	#header{
 		position:fixed;
 		height: 50px;
