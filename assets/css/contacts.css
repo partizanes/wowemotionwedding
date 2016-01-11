@@ -172,6 +172,12 @@
         background: #252525;
     }
 
+    .wrapper.style4 form input[type=text]:-webkit-autofill {
+        outline: none;
+        -webkit-box-shadow: inset 0 0 0 50px #282828 !important;
+        -webkit-text-fill-color: #bbb !important;
+        color: #bbb !important;
+    }
 
     /* Button */
 
