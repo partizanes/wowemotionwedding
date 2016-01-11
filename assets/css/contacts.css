@@ -22,13 +22,11 @@
     }
 
     #section1 {
-        background:  url("../img/subtle_carbon.png");
-        background-position: top left, center center;
+        background: url("../img/subtle_carbon.png") top left, center center;
     }
 
     #section4 {
-        background:  url("../img/black_linen_v2.png");
-        background-position: top left, center center;
+        background: url("../img/black_linen_v2.png") top left, center center;
 
     }
 

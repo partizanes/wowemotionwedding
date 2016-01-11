@@ -396,3 +396,19 @@
     left: 10%
   }
 }
+
+@media (max-width: 1367px) {
+    #gallery-container {
+        font-size: 95%;
+    }
+
+  /*  .items--big {
+        left: -168px;
+        width: 150%;
+    }
+
+    .controls {
+        bottom: 2%;
+        left: 50px;
+    } */
+}
