@@ -25,6 +25,14 @@
         background: url("../img/subtle_carbon.png") top left, center center;
     }
 
+    #section2 {
+        background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/low_contrast_linen.png") top left, center center;
+    }
+
+    #section3 {
+        background: url("http://demo.html5xcss3.com/tintin2/templatesmonster/kataklimt/img/bg-content.jpg") top left, center center;
+    }
+
     #section4 {
         background: url("../img/black_linen_v2.png") top left, center center;
 
