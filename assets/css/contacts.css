@@ -46,7 +46,9 @@
     }
     #section4 a {
         font-family: Kelly Slab;
+        text-decoration: initial;
         font-style: italic;
+        margin-left: 10px;
         color: aqua;
     }
 
@@ -74,7 +76,7 @@
     }
 
     #section4 .block {
-        margin-top: 4%
+        margin-top: 2%
     }
 
     .list {
@@ -185,6 +187,7 @@
     /* Button */
 
     .buttons {
+        list-style-type: none;
         display: inline-flex;
         margin-top: 2%;
     }
