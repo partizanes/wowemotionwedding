@@ -17,9 +17,6 @@
 
     /* Centered texts in each section
     * --------------------------------------- */
-    .section{
-        text-align:center;
-    }
 
     #section1 {
         background: url("../img/subtle_carbon.png") top left, center center;
@@ -34,8 +31,8 @@
     }
 
     #section4 {
+        text-align:center;
         background: url("../img/black_linen_v2.png") top left, center center;
-
     }
 
     #section4 p {

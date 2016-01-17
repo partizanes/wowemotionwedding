@@ -247,12 +247,12 @@ html[xmlns] .slides {
 
     .flex-direction-nav a.flex-next {
         text-align: right;
-        background: url(../img/next.png) no-repeat 50% 50% #181818
+        background: url(../img/test/next.png) no-repeat 50% 50% #181818
     }
 
     .flex-direction-nav a.flex-prev {
         text-align: left;
-        background: url(../img/prev.png) no-repeat 50% 50% #181818
+        background: url(../img/test/prev.png) no-repeat 50% 50% #181818
     }
 
     .flex-direction-nav a:hover {
@@ -292,53 +292,6 @@ html[xmlns] .slides {
 #content {
     position: relative;
     padding: 0 0 40px;
-}
-
-.block-slogan {
-    overflow: hidden;
-    padding-bottom: 44px;
-}
-
-.block-slogan h2:first-letter, h3:first-letter {
-    color: #e85356;
-    font-weight: normal;
-}
-
-.block-slogan h2, h3 {
-    float: left;
-    margin: 0;
-    padding-right: 0px;
-    font-size: 50px;
-    line-height: 54px;
-    text-transform: none;
-    color: #ffffff;
-    font-family: LazyCrazy;
-    font-weight: 300;
-    letter-spacing: -1px;
-}
-
-.block-slogan h3 {
-    padding-right: 58px;
-    padding-left: 10px;
-}
-
-.block-slogan p {
-    font-family: LazyCrazy;
-    font-size: 25px;
-    line-height: 30px;
-    color: #7f7f7f;
-    text-align: left;
-    border-left: 1px solid #454545;
-    padding: 0 0 0 26px;
-}
-
-.block-slogan a {
-    color: #e85356;
-    text-decoration: none;
-}
-
-.block-slogan div {
-    overflow: hidden;
 }
 
 .row-1 {
