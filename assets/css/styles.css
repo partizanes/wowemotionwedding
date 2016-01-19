@@ -370,6 +370,62 @@ ol.default li {
     }
 }
 
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (orientation: landscape) {
+    #logo {
+        margin-left: 20%;
+        margin-top: 0%;
+    }
+
+    #nav {
+        font-size: 84%;
+        left: 9%;
+        top: 26%;
+    }
+
+    ul.actions {
+        margin-top: 0.7%;
+    }
+
+    ul.actions li:first-child {
+        margin-left: 0px;
+    }
+
+    #footer .menu {
+        margin-left: 63%;
+        margin-top: -2.3%;
+        display: inherit;
+    }
+
+    .icon {
+        padding: 8px;
+    }
+}
+
+/* (320x480) Smartphone, Landscape */
+@media only screen and (device-width: 480px) and (orientation: landscape) {
+    #logo {
+        left: 6em;
+    }
+
+    #nav {
+        left: 10%;
+    }
+
+    #footer {
+        padding: 0px;
+        height: 1.9em;
+
+    }
+
+    ul.actions li:first-child {
+        margin-left: 73px;
+    }
+
+    .icon::before {
+        font-size: 20px;
+    }
+}
+
 /* (320x480) Smartphone, Portrait */
 @media only screen and (device-width: 320px) and (orientation: portrait) {
 
@@ -421,16 +477,6 @@ ol.default li {
     #footer {
         padding: 0px;
         height: 1.5em;
-
-    }
-}
-
-
-/* (320x480) Smartphone, Landscape */
-@media only screen and (device-width: 480px) and (orientation: landscape) {
-    #footer {
-        padding: 0px;
-        height: 5.5em;
 
     }
 }
