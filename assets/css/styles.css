@@ -369,9 +369,61 @@ ol.default li {
     }
 }
 
+
 /* (320x480) Smartphone, Landscape */
 @media only screen and (device-width: 480px) and (orientation: landscape) {
     /* insert styles here */
+}
+
+@media screen and (max-width: 360px), (min-device-width: 360px) and (max-device-width: 640px) and (orientation : portrait) {
+    #header {
+        padding: 5px 0px 0px;
+    }
+
+    #logo {
+        left: 3em;
+        font-size: 1.1em;
+        line-height: 35px;
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #logo img {
+        width: 48%;
+        height: 48%;
+    }
+
+    #nav {
+        font-size: 56%;
+        left: 0;
+        top: 45%;
+    }
+
+    .icon:before {
+        font-size: 17px;
+    }
+
+    ul.actions {
+        margin-top: 1%;
+        margin-left: 17px;
+    }
+
+    #footer .menu {
+        line-height: 0;
+        top: 0px;
+        right: 0px;
+        font-size: 80%;
+        margin-left: 8%;
+        margin-top: 3%;
+        position: initial;
+    }
+
+    #footer {
+        padding: 0px;
+        height: 1.5em;
+
+    }
 }
 
 /* (480x800) Android */
