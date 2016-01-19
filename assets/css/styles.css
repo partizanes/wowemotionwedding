@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Kelly+Slab&subset=latin,cyrillic');
 @import url("font-awesome.min.css");
 
-/* Fixed header and footer.
-* --------------------------------------- */
 #header {
     position: fixed;
+    top: 0px;
     height: 50px;
     display: block;
     width: 100%;
@@ -33,13 +32,6 @@
     text-align: left;
     color: #f2f2f2;
     padding: 20px 0 0 0;
-}
-
-#header {
-    top: 0px;
-}
-
-#footer {
     bottom: 0px;
 }
 
@@ -133,8 +125,7 @@
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
-    background-color: black;
-    background-position: center center;
+    background: black center center;
     background-size: cover;
     object-fit: cover; /*cover video background*/
     z-index: 3;
@@ -143,6 +134,14 @@
 
 /* Layer with position absolute in order to have it over the video
 * --------------------------------------- */
+
+/*solves problem with overflowing video in Mac with Chrome */
+#section0 {
+    overflow: hidden;
+    background: url("../img/background_mobile_min.png") center center;
+    background-size: cover;
+}
+
 #section0 .layer {
     position: absolute;
     z-index: 4;
@@ -150,14 +149,6 @@
     left: 0;
     top: 20%;
     font-size: 4px;
-}
-
-/*solves problem with overflowing video in Mac with Chrome */
-#section0 {
-    overflow: hidden;
-    background: url("../img/background_mobile_min.png");
-    background-position: center center;
-    background-size: cover;
 }
 
 /* List */
@@ -261,31 +252,6 @@ ol.default li {
     top: 90%;
 }
 
-@media (max-width: 1367px) {
-    /* <1367 */
-    .fp-slidesNav.top {
-        top: 60px;
-    }
-
-    /*  расположение сверху */
-    #fp-nav ul li a span,
-    .fp-slidesNav ul li a span {
-        background: #E8F600;
-    }
-
-    #gallery-container {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-}
-
-@media (min-width: 1919px) {
-    /* <1920 */
-    .fp-slidesNav.top {
-        top: 72px;
-    }
-}
-
 /* цвет точек слайдеров над футером */
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background: #E8F600;
@@ -343,20 +309,173 @@ ol.default li {
     overflow: hidden;
 }
 
-@media (max-width: 980px)  {
-    .block-slogan h3 {
-        float: none;
-        margin-bottom: 16px;
-        padding: 0;
+/* (320x480) iPhone (Original, 3G, 3GS) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* insert styles here */
+}
+
+/* (320x480) Smartphone, Portrait */
+@media only screen and (device-width: 320px) and (orientation: portrait) {
+
+    #header {
+        padding: 5px 0px 0px;
     }
 
-    .block-slogan p {
-        border: none;
-        padding: 10px;
+    #logo {
+        left: 2em;
+        font-size: 1.1em;
+        line-height: 35px;
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .block-slogan h2 {
-        margin-left: 20px;
-        margin-right: 10px;
+    #logo img {
+        width: 48%;
+        height: 48%;
+    }
+
+    #nav {
+        font-size: 56%;
+        left: -6%;
+        top: 45%;
+    }
+
+    .icon:before {
+        font-size: 17px;
+    }
+
+    ul.actions {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.99%;
+    }
+
+    #footer .menu {
+        line-height: 0;
+        top: 0px;
+        right: 0px;
+        font-size: 80%;
+        margin-left: 8%;
+        margin-top: 3%;
+        position: initial;
+        display: none;
+    }
+
+    #footer {
+        padding: 0px;
+        height: 1.5em;
+
     }
 }
+
+/* (320x480) Smartphone, Landscape */
+@media only screen and (device-width: 480px) and (orientation: landscape) {
+    /* insert styles here */
+}
+
+/* (480x800) Android */
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+    /* insert styles here */
+}
+
+/* (640x960) iPhone 4 & 4S */
+@media only screen and (min-device-width: 640px) and (max-device-width: 960px) {
+    /* insert styles here */
+}
+
+/* (720x1280) Galaxy Nexus, WXGA */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+    /* insert styles here */
+}
+
+/* (720x1280) Galaxy Nexus, Landscape */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) and (orientation: landscape) {
+    /* insert styles here */
+}
+
+/* (1024x768) iPad 1 & 2, XGA */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* insert styles here */
+}
+
+/* (768x1024) iPad 1 & 2, Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* insert styles here */
+}
+
+/* (1024x768) iPad 1 & 2, Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* insert styles here */
+}
+
+/* (2048x1536) iPad 3 */
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) {
+    /* insert styles here */
+}
+
+/* (1280x720) Galaxy Note 2, WXGA */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+    /* insert styles here */
+}
+
+/* (1366x768) WXGA Display */
+@media screen and (max-width: 1366px) {
+    .fp-slidesNav.top {
+        top: 70px;
+    }
+
+    /*  расположение сверху */
+    #fp-nav ul li a span,
+    .fp-slidesNav ul li a span {
+        background: #E8F600;
+    }
+
+    #gallery-container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+/* (1280x1024) SXGA Display */
+@media screen and (max-width: 1280px) {
+    /* insert styles here */
+}
+
+/* (1440x900) WXGA+ Display */
+@media screen and (max-width: 1440px) {
+    /* insert styles here */
+}
+
+/* (1680x1050) WSXGA+ Display */
+@media screen and (max-width: 1680px) {
+    /* insert styles here */
+}
+
+/* (1920x1080) Full HD Display */
+@media screen and (max-width: 1920px) {
+    .fp-slidesNav.top {
+        top: 72px;
+    }
+}
+
+/* (1600x900) HD+ Display */
+@media screen and (max-width: 1600px) {
+
+}
+
+/*     .block-slogan h3 {
+       float: none;
+       margin-bottom: 16px;
+       padding: 0;
+   }
+
+   .block-slogan p {
+       border: none;
+       padding: 10px;
+   }
+
+   .block-slogan h2 {
+       margin-left: 20px;
+       margin-right: 10px;
+   } */
