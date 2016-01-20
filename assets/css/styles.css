@@ -391,9 +391,9 @@ ol.default li {
     }
 
     #footer .menu {
-        margin-left: 63%;
-        margin-top: -2.3%;
+        margin-top: -2.7%;
         display: inherit;
+        text-align: right;
     }
 
     .icon {
@@ -404,11 +404,11 @@ ol.default li {
 /* (320x480) Smartphone, Landscape */
 @media only screen and (device-width: 480px) and (orientation: landscape) {
     #logo {
-        left: 6em;
+        left: 1em;
     }
 
     #nav {
-        left: 10%;
+        left: -4%;
     }
 
     #footer {
@@ -418,7 +418,8 @@ ol.default li {
     }
 
     ul.actions li:first-child {
-        margin-left: 73px;
+        margin-left: 1%;
+        margin-top: 3px;
     }
 
     .icon::before {
