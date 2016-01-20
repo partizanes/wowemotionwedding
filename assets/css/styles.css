@@ -308,28 +308,3 @@ ol.default li {
 .block-slogan div {
     overflow: hidden;
 }
-
-/* (1920x1080) Full HD Display */
-@media screen and (max-width: 1920px) {
-    .fp-slidesNav.top {
-        top: 72px;
-    }
-}
-
-/* (1366x768) WXGA Display */
-@media screen and (max-width: 1366px) {
-    .fp-slidesNav.top {
-        top: 70px;
-    }
-
-    /*  расположение сверху */
-    #fp-nav ul li a span,
-    .fp-slidesNav ul li a span {
-        background: #E8F600;
-    }
-
-    #gallery-container {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-}
