@@ -52,7 +52,6 @@ $(document).ready(function(){
 
     $('#fullpage').fullpage({
 		verticalCentered: true,
-		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#1bbc9b', '#4BBFC3'],
 		anchors: ['about', 'gallery', 'blog' , 'reviews' , 'contacts'],
 		menu: '#nav',
 		loopTop: true,
