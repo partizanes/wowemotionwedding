@@ -308,3 +308,49 @@ ol.default li {
 .block-slogan div {
     overflow: hidden;
 }
+
+
+@media (max-width: 1367px) {
+    #header {
+        height: 1.7em;
+    }
+
+    #nav {
+        top: -8px;
+    }
+
+    #logo {
+        top: -0.1em;
+        font-size: 1.5em;
+    }
+
+    #footer {
+        height: 1.5em;
+    }
+
+    #footer .menu {
+        top: -28px;
+    }
+
+    ul.actions {
+        margin: -12px 0 0 15px;
+    }
+
+    #section1 .fp-slidesNav.top {
+        top: 47px;
+    }
+
+    #section3 .kwicks {
+        margin: -5px 0 -45px;
+    }
+
+    #section3 .kwicks > li {
+        height: 350px;
+        background-size: cover;
+    }
+
+    #section3 .block-slogan p {
+        line-height: 24px;
+        font-size: 24px;
+    }
+}
