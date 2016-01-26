@@ -3,12 +3,28 @@
     height: 376px;
     background-image: url(../img/temp/polaroid-bg.png);
     position: absolute;
+    box-shadow: 0px 0px 30px 5px rgba(255, 255, 255, 0.2);
+
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
 }
 .polaroid img {
     width: 335px;
     height: 275px;
     margin: 25px 0 0 15px;
+
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
 }
+
+.polaroid img:hover {
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -o-transform: scale(1.04);
+}
+
 .polaroid p {
     text-align: center;
     font-family: Georgia, serif;

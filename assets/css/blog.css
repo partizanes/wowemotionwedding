@@ -155,6 +155,28 @@
     transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 1366px) {
+    #section2 .thumbnails.thumbnails-1.top {
+        margin-top: -6%;
+    }
+
+    #section2 .thumbnails > li {
+        width: 18%;
+    }
+
+    #section2 .thumbnails > li {
+        margin-bottom: -48px;
+    }
+
+    #section2 .thumbnails-1 .thumbnail-1 section {
+        padding-top: 5px;
+    }
+
+    #section2 .fp-slidesNav.top {
+        top: 40px;
+    }
+}
+
 @media screen and (min-width: 1366px) and (max-width: 1440px)  {
     #section2 .top {
         margin-top: 2.5%;
@@ -188,8 +210,8 @@
 /* Portrait and Landscape */
     @media only screen
     and (min-device-width: 320px)
-    and (max-device-width: 480px)
-    and (-webkit-min-device-pixel-ratio: 2) {
+    and (max-device-width: 640px)
+    and (-webkit-min-device-pixel-ratio: 1) {
 
         #section2 .thumbnails.thumbnails-1.top {
             margin-top: 5%;
@@ -230,4 +252,3 @@
             margin-bottom: 1px;
         }
     }
-

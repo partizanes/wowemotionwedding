@@ -38,6 +38,10 @@ $(document).ready(function(){
         }
 	});
 
+
+    var firstLeftPoint = 40;
+    var firstTopPoint = 120;
+
     $(".polaroid").each(function (i) {
         var tempVal = Math.round(Math.random());
         if(tempVal == 1) {
@@ -55,14 +59,29 @@ $(document).ready(function(){
             var wih = window.innerHeight;
         }
 
+
+
+        if(firstLeftPoint> (window.innerWidth - 200)) {
+            firstLeftPoint = 40;
+
+            if(window.innerWidth<1366) {
+                firstTopPoint = firstTopPoint + wih/3.5;
+            } else {
+                firstTopPoint = firstTopPoint + wih/2.4;
+            }
+
+        }
+
         var cssObj = {
             'display' : 'inline-block',
-            'left' : Math.random()*(wiw-200),
-            'top' : Math.random()*(wih-250),
+            'left' : firstLeftPoint,
+            'top' : firstTopPoint,
             'tranform' : 'rotate('+ rotDegrees +'deg)', //added in case CSS3 is standard
             '-moz-transform' : 'rotate('+ rotDegrees +'deg)',
             '-webkit-transform' : 'rotate('+ rotDegrees +'deg)'};  // safari only
         $(this).css(cssObj);
+
+        firstLeftPoint = firstLeftPoint + wiw/5.2;
     });
 
     // Set the Z-Index (used to display images on top while dragging)
