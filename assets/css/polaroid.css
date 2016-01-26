@@ -17,6 +17,11 @@
     margin-top: 15px;
 }
 
+
+#section1 .fp-slidesNav.top {
+    top: 65px;
+}
+
 @media (max-width: 1367px) {
     .polaroid {
         width: 287px;

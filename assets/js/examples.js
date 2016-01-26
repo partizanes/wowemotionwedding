@@ -1,24 +1,3 @@
-var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-};
-
 function copyToClipboard(text) {
     swal({
         html: "true",
@@ -44,13 +23,6 @@ $(document).ready(function(){
     $('#gallery-container').sGallery({
         fullScreenEnabled: true //default is false
     });
-
-    if(isMobile.any()){
-        var cssObj = {
-            'width' : '0%',
-            'height' : '0%'};
-        $('video').css(cssObj);
-    }
 
     $('#fullpage').fullpage({
 		verticalCentered: true,

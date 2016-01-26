@@ -7,25 +7,36 @@
 	font-family: 'Terminal Dosis', Arial, sans-serif;
 }
 
-.fancy_title h2 {
-	text-align: center;
-	font-family: 'Niconne', Arial, sans-serif;
-	letter-spacing: 3px;
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background: black center center;
+    background-size: cover;
+    object-fit: cover; /*cover video background*/
+    z-index: 3;
 }
-.fancy_title h2 a {
-	text-align: left;
-	font-size: 5em;
-	line-height: 160px;
-	display: block;
-	padding-bottom: 30px;
-	-webkit-mask: url(../about/mask.png) repeat;
-	-o-mask: url(../about/mask.png) repeat;
-	-moz-mask: url(../about/mask.png) repeat;
-	-ms-mask: url(../about/mask.png) repeat;
-	mask: url(../about/mask.png) repeat;
-	text-decoration: none;
 
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    #myVideo {
+        visibility: hidden;
+    }
+
+    #section0 {
+        overflow: hidden;
+        background: url("../img/background_mobile_min.png") center center;
+        background-size: cover;
+    }
 }
+
 #footer .menu li span {
 
 	-webkit-transition: all 0.3s linear;

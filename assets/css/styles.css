@@ -128,31 +128,10 @@
     color: #9f31b0;
 }
 
-#myVideo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    background: black center center;
-    background-size: cover;
-    object-fit: cover; /*cover video background*/
-    z-index: 3;
-    margin-top: 2%;
-}
-
 /* Layer with position absolute in order to have it over the video
 * --------------------------------------- */
 
 /*solves problem with overflowing video in Mac with Chrome */
-#section0 {
-    overflow: hidden;
-    background: url("../img/background_mobile_min.png") center center;
-    background-size: cover;
-}
 
 #section0 .layer {
     position: absolute;
