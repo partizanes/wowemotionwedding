@@ -155,7 +155,7 @@
     transition: all 0.3s ease;
 }
 
-@media (max-width: 1367px) {
+@media screen and (min-width: 1366px) and (max-width: 1440px)  {
     #section2 .top {
         margin-top: 2.5%;
     }
@@ -184,4 +184,50 @@
         margin-top: -3%;
     }
 }
+
+/* Portrait and Landscape */
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+        #section2 .thumbnails.thumbnails-1.top {
+            margin-top: 5%;
+        }
+
+        #section2 .fp-slidesNav.top {
+            margin-top: 5%;
+        }
+
+
+        #section2 .thumbnails > li {
+            width: 39%;
+            margin-left: 6%;
+            margin-top: -7%;
+        }
+
+        #section2 .block-slogan h2, h3 {
+            float: none;
+        }
+
+        #section2 .thumbnails:before,
+        .thumbnails:after {
+             display: none;
+        }
+
+        #section2 .thumbnails-1 .thumbnail-1 section {
+            width: 85%;
+        }
+
+        #section2 div img {
+            width: 85% ;
+        }
+
+
+        #section2 h3 {
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 1px;
+        }
+    }
 

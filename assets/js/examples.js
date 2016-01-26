@@ -35,6 +35,8 @@ function copyToClipboard(text) {
 }
 
 $(document).ready(function(){
+    $("#footer .menu li:first-child").lettering();
+
 	$("#demosMenu").change(function(){
 	  window.location.href = $(this).find("option:selected").attr("id") + '.html';
 	});
