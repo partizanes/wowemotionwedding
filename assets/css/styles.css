@@ -330,18 +330,4 @@ ol.default li {
     #section1 .fp-slidesNav.top {
         top: 47px;
     }
-
-    #section3 .kwicks {
-        margin: -5px 0 -45px;
-    }
-
-    #section3 .kwicks > li {
-        height: 350px;
-        background-size: cover;
-    }
-
-    #section3 .block-slogan p {
-        line-height: 24px;
-        font-size: 24px;
-    }
 }
