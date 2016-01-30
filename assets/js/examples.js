@@ -13,7 +13,17 @@ function copyToClipboard(text) {
     $('fieldset > input[type=text]').select();
 }
 
+function pulseLogo() {
+    if(!document.getElementById("logoImg").classList.contains("imgStateUp")) {
+        document.getElementById("logoImg").classList.add('imgStateUp');
+    }
+    else {
+        document.getElementById("logoImg").classList.remove("imgStateUp");
+    }
+}
+
 $(document).ready(function(){
+
     $("#footer .menu li:first-child").lettering();
 
 	$("#demosMenu").change(function(){
@@ -59,8 +69,6 @@ $(document).ready(function(){
             var wih = window.innerHeight;
         }
 
-
-
         if(firstLeftPoint> (window.innerWidth - 200)) {
             firstLeftPoint = 40;
 
@@ -70,6 +78,10 @@ $(document).ready(function(){
                 firstTopPoint = firstTopPoint + wih/2.4;
             }
 
+            if(firstTopPoint > window.innerHeight - 200) {
+                firstTopPoint = 350;
+                firstLeftPoint = 250;
+            }
         }
 
         var cssObj = {

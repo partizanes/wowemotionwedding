@@ -59,8 +59,8 @@
 <header id="header">
     <!-- Logo -->
     <a href="#about">
-        <h1 id="logo">Emotion
-            <img src="assets/img/logo.png" alt="Emotion Wedding Logo"> Wedding
+        <h1 id="logo" onMouseOver="pulseLogo();interval = setInterval(pulseLogo, 1000);" onmouseout="document.getElementById('logoImg').classList.remove('imgStateUp');clearInterval(interval);">Emotion
+            <img id="logoImg" src="assets/img/logo.png" alt="Emotion Wedding Logo" > Wedding
         </h1>
     </a>
 

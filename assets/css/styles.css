@@ -84,10 +84,10 @@
     -webkit-transition: all 1s ease-out;
 }
 
-#logo img:hover {
-    -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    -o-transform: scale(1.15);
+.imgStateUp {
+    -webkit-transform: scale(1.14);
+    -moz-transform: scale(1.14);
+    -o-transform: scale(1.14);
 }
 
 #nav {
@@ -107,6 +107,7 @@
     display: inline-block;
     margin-left: 0.5em;
     font-size: 1.4em;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 #nav ul li a {
@@ -277,6 +278,15 @@ ol.default li {
 }
 
 .block-slogan h3 {
+    float: left;
+    margin: 0;
+    font-size: 50px;
+    line-height: 54px;
+    text-transform: none;
+    color: #ffffff;
+    font-family: LazyCrazy;
+    font-weight: 300;
+    letter-spacing: -1px;
     padding-right: 58px;
     padding-left: 10px;
 }
